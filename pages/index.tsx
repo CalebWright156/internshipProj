@@ -1,14 +1,13 @@
 import type { NextPage } from 'next'
-import { ThemeProvider, Typography } from '@mui/material'
-import { theme } from  '../components/themes/MainTheme'
+import { Typography } from '@mui/material'
+import TopComponent from '../components/topComponent/TopComponent'
+
 
 const Home: NextPage = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <div>
-        <Typography variant='h1'>No love </Typography>
-      </div>
-    </ThemeProvider>
+    <>
+      <TopComponent />
+    </>
   )
 }
 
