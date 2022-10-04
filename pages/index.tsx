@@ -1,12 +1,13 @@
 import type { NextPage } from 'next'
-import { Typography } from '@mui/material'
-import TopComponent from '../components/topComponent/TopComponent'
+import TopComponent from '../components/topComponent/TopComponentSection'
+import MiddleComponent from '../components/middleComponent/MiddleComponentSection'
 
 
 const Home: NextPage = () => {
   return (
     <>
       <TopComponent />
+      <MiddleComponent />
     </>
   )
 }

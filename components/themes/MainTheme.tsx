@@ -8,10 +8,7 @@ export const theme = createTheme({
             fontSize: '84px',
             lineHeight: '84px',
             color: '#F7F7F7',
-            '@media (max-width:480px)': {
-                fontSize: '36px',
-                lineHeight: '36px',
-            }
+
         },
         h2: {
             fontFamily: 'Syne, sans-serif',
@@ -19,10 +16,7 @@ export const theme = createTheme({
             fontSize: '64px',
             lineHeight: '64px',
             color: '#F7F7F7',
-            '@media (max-width:480px)': {
-                fontSize: '24px',
-                lineHeight: '24px'
-            }
+  
         },
         h3: {
             fontFamily: 'Syne, sans-serif',
@@ -30,10 +24,7 @@ export const theme = createTheme({
             fontSize: '32px',
             lineHeight: '32px',
             color: '#F7F7F7',
-            '@media (max-width:480px)': {
-                fontSize: '18px',
-                lineHeight: '18px'
-            }
+
         },
         // subheading
         subtitle1: {
@@ -42,10 +33,7 @@ export const theme = createTheme({
             fontSize: '20px',
             lineHeight: '28px',
             color: '#F7F7F7',
-            '@media (max-width:480px)': {
-                fontSize: '16px',
-                lineHeight: '20px'
-            }
+
         },
         // paragraph
         body1: {
@@ -54,21 +42,16 @@ export const theme = createTheme({
             fontSize: '16px',
             lineHeight: '24px',
             color: '#F7F7F7',
-            '@media (max-wdith:480px)': {
-                fontSize: '14px',
-                lineHeight: '22px'
-            }
+
         },
         button: {
             fontFamily: 'Syne, sans-serif',
             fontWeight: 700,
             fontSize: '16px',
             lineHeight: 'auto',
-            letterSpacing: '3.2px',
+            letterSpacing: '0.2em',
             color: '#F7F7F7',
-            '@media (max-width:480px)': {
-                fontSize: '12px',                
-            }
+
         },
         caption: {
             fontFamily: 'Oxygen Mono, sans-serif',
@@ -77,6 +60,7 @@ export const theme = createTheme({
             lineHeight: '14px',
             letterSpacing: '10%',
             color: '#F7F7F7',
+            textTransform: 'uppercase'
         }
     }
 })
