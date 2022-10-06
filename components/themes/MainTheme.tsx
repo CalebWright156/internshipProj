@@ -1,18 +1,7 @@
 import { createTheme } from '@mui/material'
-import { responsiveFontSizes } from './ResponsiveFontSizes'
 
-const breakpoints = {
-    values: {
-        xs: 0,
-        sm: 480, // Phone
-        md: 768, // Tablet/Laptop
-        lg: 1024, // Desktop
-        xl: 1200
-    }
-}
 
 export const theme = createTheme({
-    breakpoints,
     typography: {
         h1: {
             fontFamily: 'Syne, sans-serif',
@@ -62,9 +51,8 @@ export const theme = createTheme({
             fontSize: '16px',
             lineHeight: 'auto',
             letterSpacing: '0.2em',
+            textTransform: 'uppercase',
             color: '#F7F7F7',
-            ...responsiveFontSizes({ xs:6, sm: 12, md: 14, lg: 16})
-
         },
         caption: {
             fontFamily: 'Oxygen Mono, sans-serif',
@@ -73,7 +61,7 @@ export const theme = createTheme({
             lineHeight: '14px',
             letterSpacing: '10%',
             color: '#F7F7F7',
-            textTransform: 'uppercase'
+            textTransform: 'uppercase',
         }
     }
 })
