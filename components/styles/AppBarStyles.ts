@@ -1,24 +1,23 @@
 import { List, ListItemText } from '@mui/material'
 import { styled } from '@mui/material/styles'
 import { Box } from '@mui/system'
-import { AppBarStyleTypes } from './AppBarTypes'
+import { AppBarStyleTypes } from '../../types/AppTypes'
 
 
 // Container
 export const AppBarContainer = styled(Box)(() => ({
     display: 'flex',
-    marginTop: 4,
     justifyContent: 'center',
     alignItems: 'center',
     padding: '2px 8px',
-    background: '#CCC'
+    backgroundColor: 'none',
 }))
 
 export const HeaderList = styled(List)<AppBarStyleTypes>(({ type }) => ({
     display: type === 'row' ? 'flex' : 'block',
     flexGrow: 3,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
 }))
 
 export const ListTextStyles = styled(ListItemText)(() => ({

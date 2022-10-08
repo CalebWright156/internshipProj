@@ -1,11 +1,11 @@
 import { ListItemText, Typography } from '@mui/material'
 import React from 'react'
-import { AppBarContainer, HeaderList, ListTextStyles } from '../styles/AppBar/AppBarStyles'
+import { AppBarContainer, HeaderList, ListTextStyles } from '../styles/AppBarStyles'
 import Logo from '../../public/assets/Logo.svg'
 import Image from 'next/image'
-import { AppBarProps } from './appBarTypes'
+import { AppBarProps } from '../../types/AppTypes'
 
-const AppBarDesktop: React.FC = () => {
+const AppBarDesktop: React.FC<AppBarProps> = ({ matches }) => {
   return (
    <AppBarContainer>
         <HeaderList type='row' sx={{}}>

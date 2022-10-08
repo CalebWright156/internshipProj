@@ -3,6 +3,7 @@ import { useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles"
 import AppBarDesktop from './appBarDesktop'
 import AppBarMobile from './appBarMobile'
+import { Box } from '@mui/system';
 
 const AppBar = () => {
 
@@ -11,7 +12,7 @@ const AppBar = () => {
 
   return (
     <>
-        {matches ? <AppBarMobile /> : <AppBarDesktop />}
+        {matches ? (<AppBarMobile matches={matches} />) : (<AppBarDesktop matches={matches} />)}
     </>
   )
 }
