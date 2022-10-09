@@ -1,3 +1,4 @@
+import { Typography } from '@mui/material'
 import { styled } from '@mui/material/styles'
 import { Box, textAlign } from '@mui/system'
 
@@ -7,7 +8,7 @@ export const ButtonStyled = styled(Box)(({ theme }) => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    width: '12vw',
+    width: '10vw',
     borderRadius: '50%',
     paddingTop: '1.5vh',
     paddingBottom: '1vh',
@@ -16,9 +17,11 @@ export const ButtonStyled = styled(Box)(({ theme }) => ({
         paddingTop: '1vh',
         width: '13vw',
         paddingBottom: '0.5vh'
-    },
-    '&:hover': {
-        curser: 'pointer',
-        color: 'white'
     }
 }))
+
+export const ButtonText = styled(Typography)(() => ({
+    paddingBottom: '0.5vh',
+    fontSize: '0.7vw'
+}))
+

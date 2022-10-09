@@ -7,7 +7,6 @@ export const theme = createTheme({
             fontFamily: 'Syne, sans-serif',
             fontWeight: 500,
             fontSize: '84px',
-            lineHeight: '84px',
             color: '#F7F7F7',
 
         },
@@ -51,6 +50,7 @@ export const theme = createTheme({
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
             color: '#F7F7F7',
+            cursor: 'pointer'
         },
         caption: {
             fontFamily: 'Oxygen Mono, sans-serif',

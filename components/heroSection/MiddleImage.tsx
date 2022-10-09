@@ -13,7 +13,7 @@ const MiddleImage = () => {
   return (
     <MiddleImageStyles>
       <MiddleImageText>
-        <Box sx={{height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', maxWidth: '100%'}}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', maxWidth: '100%'}}>
           <SubHeadingContainer>
               <SubHeadingStyles variant='subtitle1' align='center'>We can offer a complete design service to all vessels, power and sail. Whether it is conceptual design work or full naval architecture and engineering, no job is too big or too small for our team.</SubHeadingStyles>
           </SubHeadingContainer>
@@ -27,7 +27,7 @@ const MiddleImage = () => {
           </BodyContainer>
         </Box>
       </MiddleImageText>
-      <Box sx={{opacity: 0.4}}>
+      <Box sx={{backgroundColor: 'black'}}>
         <Image src={SmallYacht} alt='oooh' />
       </Box>
       <ButtonPositions>
