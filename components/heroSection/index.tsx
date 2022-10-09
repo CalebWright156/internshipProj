@@ -5,9 +5,13 @@ import { BackgroundImage } from '../styles/HeroSectionStyles'
 import BackgroundYacht from '../../public/assets/2.png'
 import { Button, Typography } from '@mui/material'
 import MiddleImage from './MiddleImage'
-import BWButton from '../Reusables/BWButton'
+import { useMediaQuery } from "@mui/material";
+import { useTheme } from "@mui/material/styles"
 
 const HeroSection = () => {
+  const theme = useTheme()
+  const matches = useMediaQuery(theme.breakpoints.down('md'))
+
   return (
     <Box sx={{ position: 'relative', top: '-15vh'}}>
       <Box sx={{ backgroundColor: 'black', width: '100%', height: '100%'}}>
@@ -18,7 +22,6 @@ const HeroSection = () => {
           <MiddleImage />
         </Box>
       </Box>
-      <BWButton />
     </Box>
 
 

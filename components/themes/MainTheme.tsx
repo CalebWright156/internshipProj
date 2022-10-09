@@ -31,8 +31,7 @@ export const theme = createTheme({
         subtitle1: {
             fontFamily: 'Syne, sans-serif',
             fontWeight: 600,
-            fontSize: '20px',
-            lineHeight: '28px',
+            fontSize: '15px',
             color: '#F7F7F7',
 
         },
@@ -41,7 +40,6 @@ export const theme = createTheme({
             fontFamily: 'Archvio, sans-serif',
             fontWeight: 300,
             fontSize: '16px',
-            lineHeight: '24px',
             color: '#F7F7F7',
 
         },
@@ -58,7 +56,6 @@ export const theme = createTheme({
             fontFamily: 'Oxygen Mono, sans-serif',
             fontWeight: 400,
             fontSize: '12px',
-            lineHeight: '14px',
             letterSpacing: '10%',
             color: '#F7F7F7',
             textTransform: 'uppercase',

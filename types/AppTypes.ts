@@ -9,6 +9,10 @@ export type AppBarStyleTypes = {
     type: string
 }
 
-/////////////////
-//Banner Types
-////////////////
+//////////////
+//Button types
+/////////////
+
+export interface ButtonProps {
+    text: string
+}
