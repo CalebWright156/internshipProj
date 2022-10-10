@@ -31,7 +31,7 @@ const MiddleImage = () => {
         <Image src={SmallYacht} alt='oooh' />
       </Box>
       <ButtonPositions>
-        <BWButton text='SEE EXPERTISE' width='10vw'/>
+        <BWButton text='SEE EXPERTISE' height='7vh' width='10vw'/>
       </ButtonPositions>
     </MiddleImageStyles>
   )

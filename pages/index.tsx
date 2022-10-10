@@ -8,10 +8,12 @@ import Image from 'next/image';
 import Yacht from '../public/assets/1.png'
 import SelectedWorks from '../components/selectedWorks/index' 
 import AwardSection from '../components/awardSection/index'
+import Footer from '../components/footer/index'
+import AppDrawer from '../components/drawer/index'
 
 const Home: NextPage = () => {
   useEffect(() => {
-    document.title = 'React Material UI - Homepage'
+    document.title = 'Front End Test'
   }, [])
 
   return (
@@ -34,6 +36,7 @@ const Home: NextPage = () => {
       <HeroSection />
       <SelectedWorks />
       <AwardSection />
+      <Footer />
     </Container>
   )
 }

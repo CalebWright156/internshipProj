@@ -15,7 +15,7 @@ export const ButtonStyled = styled(Box)(({ theme }) => ({
     [theme.breakpoints.down('sm')]: {
         paddingTop: '1vh',
         width: '13vw',
-        paddingBottom: '0.5vh'
+        paddingBottom: '0.5vh',
     }
 }))
 

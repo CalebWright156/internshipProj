@@ -8,6 +8,7 @@ export const theme = createTheme({
             fontWeight: 500,
             fontSize: '84px',
             color: '#F7F7F7',
+            textTransform: 'uppercase'
 
         },
         h2: {
@@ -59,6 +60,17 @@ export const theme = createTheme({
             letterSpacing: '10%',
             color: '#F7F7F7',
             textTransform: 'uppercase',
+        }
+    },
+
+    components: {
+        MuiDrawer: {
+            styleOverrides: {
+                paper: {
+                    width: 250,
+                    background: '#79858C'
+                }
+            }
         }
     }
 })

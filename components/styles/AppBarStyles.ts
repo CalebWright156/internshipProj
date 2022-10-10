@@ -2,6 +2,7 @@ import { List, ListItemText } from '@mui/material'
 import { styled } from '@mui/material/styles'
 import { Box } from '@mui/system'
 import { AppBarStyleTypes } from '../../types/AppTypes'
+import { IconButton } from '@mui/material'
 
 
 // Container
@@ -29,3 +30,9 @@ export const ListTextStyles = styled(ListItemText)(() => ({
     textTransform: 'uppercase',
     color: '#F7F7F7',
 }))
+
+export const DrawerCloseButton = styled(IconButton)(() => ({
+    position: 'absolute',
+    top: 3,
+    zIndex: 1999,      
+  }));
