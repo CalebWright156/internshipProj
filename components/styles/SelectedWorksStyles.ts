@@ -1,3 +1,4 @@
+import { Button } from '@mui/material'
 import { styled } from '@mui/material/styles'
 import { Box } from '@mui/system'
 
@@ -13,4 +14,17 @@ export const RightSideContent = styled(Box)(() => ({
     overflow: 'hidden',
     whiteSpace: 'nowrap',
     position: 'relative',
+}))
+
+export const ButtonStyles = styled(Button)(() => ({
+    color: 'white',
+
+}))
+
+export const ButtonContainer = styled(Box)(() => ({
+    display: 'flex'
+}))
+
+export const LinkButtonStyles = styled(Box)(() => ({
+    
 }))

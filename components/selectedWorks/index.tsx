@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Image1 from '../../public/assets/3.png'
 import Image2 from '../../public/assets/4.png'
 import Image3 from '../../public/assets/5.png'
-import { LeftSideContent, RightSideContent} from '../styles/SelectedWorksStyles'
+import { LeftSideContent, RightSideContent, ButtonStyles, ButtonContainer, LinkButtonStyles} from '../styles/SelectedWorksStyles'
 import BWButton from '../Reusables/BWButton'
  
 
@@ -47,22 +47,52 @@ const SelectedWorks = () => {
             <Box>
                 <Typography variant='h1' sx={{ fontSize: '5vw', lineHeight: '100%'}}>SELECTED <br /> WORKS</Typography>
             </Box>
-            <Box sx={{ paddingTop: '10vh', paddingBottom: '10vh', display: 'flex', flexDirection: 'column', alignItems: 'start'}}>
-                <Button onClick={image3Click}>Case study 3</Button>
-                <Button onClick={image2Click}>Case study 2</Button>
-                <Button onClick={image1Click}>Case study 1</Button>
+            <Box sx={{ marginTop: '5vh', paddingBottom: '10vh', display: 'flex', flexDirection: 'column', alignItems: 'start', marginRight: '15vw'}}>
+
+                <ButtonContainer>
+                    <Box sx={{paddingRight: '1vw', paddingTop: '1.5vh'}}>
+                        <Typography sx={{fontFamily: 'Oxygen Mono'}}>[01]</Typography>
+                    </Box>
+                    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'start'}}>
+                        <ButtonStyles disableRipple={true} onClick={image3Click} sx={{opacity: zImage3 ? 1 : 0.5, fontSize: zImage3 ? '3vw' : '1vw'}}>Case study</ButtonStyles>
+                        <Typography variant='body1' sx={{fontSize: '0.8vw', display: zImage3 ? 'block' : 'none', paddingTop: '1vh', paddingLeft: '1vw'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu in venenatis id laoreet enim. Interdum in orci vitae feugiat quam urna. Pretium netus nec ante massa nulla odio nunc posuere sit. Nec justo, leo eget ipsum sollicitudin aliquet.</Typography>   
+                    </Box>
+                </ButtonContainer>
+
+                <ButtonContainer>
+                    <Box sx={{paddingRight: '1vw', paddingTop: '1.5vh'}}>
+                        <Typography sx={{fontFamily: 'Oxygen Mono'}}>[02]</Typography>
+                    </Box>
+                    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'start'}}>
+                        <ButtonStyles disableRipple={true} onClick={image2Click} sx={{opacity: zImage2 ? 1 : 0.5, fontSize: zImage2 ? '3vw' : '1vw'}}>Case study</ButtonStyles>
+                        <Typography variant='body1' sx={{fontSize: '0.8vw', display: zImage2 ? 'block' : 'none', paddingTop: '1vh', paddingLeft: '1vw'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu in venenatis id laoreet enim. Interdum in orci vitae feugiat quam urna. Pretium netus nec ante massa nulla odio nunc posuere sit. Nec justo, leo eget ipsum sollicitudin aliquet.</Typography>
+                    </Box>
+                </ButtonContainer>
+
+                <ButtonContainer>
+                    <Box sx={{paddingRight: '1vw', paddingTop: '1.5vh'}}>
+                        <Typography sx={{fontFamily: 'Oxygen Mono'}}>[03]</Typography>
+                    </Box>
+                    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'start'}}>
+                        <ButtonStyles disableRipple={true} onClick={image1Click} sx={{opacity: zImage1 ? 1 : 0.5, fontSize: zImage1 ? '3vw' : '1vw'}}>Case study</ButtonStyles>
+                        <Typography variant='body1' sx={{fontSize: '0.8vw', display: zImage1 ? 'block' : 'none', paddingTop: '1vh', paddingLeft: '1vw'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu in venenatis id laoreet enim. Interdum in orci vitae feugiat quam urna. Pretium netus nec ante massa nulla odio nunc posuere sit. Nec justo, leo eget ipsum sollicitudin aliquet.</Typography>
+                    </Box>
+                </ButtonContainer>
             </Box>
-            <BWButton text='see all designs' />
+            <LinkButtonStyles>
+                <BWButton text='see all designs' />
+            </LinkButtonStyles>
+
         </LeftSideContent>
 
         <RightSideContent>
-           <Box sx={{ position: 'relative', zIndex: zImage3 ? 5 : 1, top: '15vw', transform: 'translate(10vh, -5vw)', overflow: 'hidden'}}>
+           <Box sx={{ position: 'relative', zIndex: zImage3 ? 5 : 1, top: '15vw', transform: 'translate(10vh, -5vw)', overflow: 'hidden', opacity: zImage3 ? 1 : 0.5}}>
                 <Image src={Image3}/>
             </Box>
-            <Box sx={{ position: 'relative', zIndex: zImage2 ? 5 : 2, top: '18vw', transform: 'translate(6vh, -28vw)'}}>
+            <Box sx={{ position: 'relative', zIndex: zImage2 ? 5 : 2, top: '18vw', transform: 'translate(6vh, -28vw)', opacity: zImage2 ? 1 : 0.5}}>
                 <Image src={Image2}/>
             </Box>
-            <Box sx={{ position: 'absolute', zIndex: zImage1 ? 5: 3, transform: 'translate(2vh, -28vw)'}}>
+            <Box sx={{ position: 'absolute', zIndex: zImage1 ? 5: 3, transform: 'translate(2vh, -28vw)', opacity: zImage1 ? 1 : 0.5}}>
                 <Image src={Image1}/>
             </Box>
         </RightSideContent>
