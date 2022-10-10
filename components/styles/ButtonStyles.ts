@@ -8,7 +8,6 @@ export const ButtonStyled = styled(Box)(({ theme }) => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    width: '10vw',
     borderRadius: '50%',
     paddingTop: '1.5vh',
     paddingBottom: '1vh',

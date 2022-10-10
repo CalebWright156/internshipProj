@@ -13,7 +13,7 @@ const SelectedWorks = () => {
 
     const [zImage3, setZImage3] = useState(false)
     const [zImage2, setZImage2] = useState(false)
-    const [zImage1, setZImage1] = useState(false)
+    const [zImage1, setZImage1] = useState(true)
 
     const image3Click = () => {
         setZImage3(!zImage3)
@@ -51,7 +51,7 @@ const SelectedWorks = () => {
 
                 <ButtonContainer>
                     <Box sx={{paddingRight: '1vw', paddingTop: '1.5vh'}}>
-                        <Typography sx={{fontFamily: 'Oxygen Mono'}}>[01]</Typography>
+                        <Typography sx={{fontFamily: 'Oxygen Mono', fontSize: '0.7vw', opacity: zImage3 ? 1 : 0.5}}>[01]</Typography>
                     </Box>
                     <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'start'}}>
                         <ButtonStyles disableRipple={true} onClick={image3Click} sx={{opacity: zImage3 ? 1 : 0.5, fontSize: zImage3 ? '3vw' : '1vw'}}>Case study</ButtonStyles>
@@ -61,7 +61,7 @@ const SelectedWorks = () => {
 
                 <ButtonContainer>
                     <Box sx={{paddingRight: '1vw', paddingTop: '1.5vh'}}>
-                        <Typography sx={{fontFamily: 'Oxygen Mono'}}>[02]</Typography>
+                        <Typography sx={{fontFamily: 'Oxygen Mono', fontSize: '0.7vw', opacity: zImage2 ? 1 : 0.5}}>[02]</Typography>
                     </Box>
                     <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'start'}}>
                         <ButtonStyles disableRipple={true} onClick={image2Click} sx={{opacity: zImage2 ? 1 : 0.5, fontSize: zImage2 ? '3vw' : '1vw'}}>Case study</ButtonStyles>
@@ -71,7 +71,7 @@ const SelectedWorks = () => {
 
                 <ButtonContainer>
                     <Box sx={{paddingRight: '1vw', paddingTop: '1.5vh'}}>
-                        <Typography sx={{fontFamily: 'Oxygen Mono'}}>[03]</Typography>
+                        <Typography sx={{fontFamily: 'Oxygen Mono', fontSize: '0.7vw', opacity: zImage1 ? 1 : 0.5}}>[03]</Typography>
                     </Box>
                     <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'start'}}>
                         <ButtonStyles disableRipple={true} onClick={image1Click} sx={{opacity: zImage1 ? 1 : 0.5, fontSize: zImage1 ? '3vw' : '1vw'}}>Case study</ButtonStyles>
@@ -80,7 +80,7 @@ const SelectedWorks = () => {
                 </ButtonContainer>
             </Box>
             <LinkButtonStyles>
-                <BWButton text='see all designs' />
+                <BWButton text='see all designs' width='15vw' height="8vh" />
             </LinkButtonStyles>
 
         </LeftSideContent>

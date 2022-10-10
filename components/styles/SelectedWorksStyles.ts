@@ -22,9 +22,10 @@ export const ButtonStyles = styled(Button)(() => ({
 }))
 
 export const ButtonContainer = styled(Box)(() => ({
-    display: 'flex'
+    display: 'flex',
+    padding: '2vh 1vw'
 }))
 
 export const LinkButtonStyles = styled(Box)(() => ({
-    
+    width: '300px'
 }))

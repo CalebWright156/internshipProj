@@ -6,7 +6,8 @@ import Banner from '../components/banner/index'
 import HeroSection from '../components/heroSection/index'
 import Image from 'next/image';
 import Yacht from '../public/assets/1.png'
-import SelectedWorks from '../components/selectedWorks/index'
+import SelectedWorks from '../components/selectedWorks/index' 
+import AwardSection from '../components/awardSection/index'
 
 const Home: NextPage = () => {
   useEffect(() => {
@@ -32,6 +33,7 @@ const Home: NextPage = () => {
         </Box>
       <HeroSection />
       <SelectedWorks />
+      <AwardSection />
     </Container>
   )
 }
